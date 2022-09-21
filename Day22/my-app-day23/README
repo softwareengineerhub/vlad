@@ -1,0 +1,52 @@
+Map:
+1)all happens in keys
+2) keys should be uniqueue
+3) you can get all keys by callling
+map.keys();
+4)
+ HashMap() - HashSet for keys
+ LinkedHashMap() - LinkedHashSet for keys
+ TreeMap() - TreeSet for keys
+
+
+Examples:
+1) pair (key, value)
+[(pair, value), (pair, value),...(pair, value)]
+[("Schevchenko", 7), ("Lewandowski", 7),...("Messi", 10)]
+
+2) Key set:
+Set set = map.keySet();
+["Schevchenko", "Lewandowski",...("Messi")]
+
+3) to ad pair need to call
+ put(key, value) - returns Object (old value by this key)
+
+ a) Object oldValueByThisKey = map.put("Rebrov", 11);
+ if rEBROV WAS NOT PRESENT BEFORE --> oldValueByThisKey = null;
+ [("Schevchenko", 7), ("Lewandowski", 7),...("Messi", 10), ("Rebrov", 11)]
+
+ b)
+ Object oldValueByThisKey = map.put("Schevchenko", 10);
+ oldValueByThisKey-->10;
+ [("Schevchenko", 10), ("Lewandowski", 7),...("Messi", 10), ("Rebrov", 11)]
+-----------------------------------
+List:
+1) add() - to add item in the end
+2) set(i, Object) - replace item on i postion
+[]
+add("A") --> [A]
+add("B") --> [A, B]
+add("C") --> [A,B,C]
+Object oldValue = set(0, "W") --> [W,B,C]
+oldValue-->A
+
+
+Map:
+add() and set() are in one method put(key, value);
+put(key,value):
+1) if key not exists in map --> put() is same as add();
+2) if exists in map --> put() is same as set();
+
+
+
+
